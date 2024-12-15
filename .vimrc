@@ -1,3 +1,17 @@
+"////////// Before plugins installations ////////
+" first install vim > sudo pacman -S vim
+"////////// Some plugins need nodejs
+" sudo pacman -S nodejs npm 
+"////////// if we use vim-pretier we need yarn
+" sudo pacman -S yarn
+"////////// Now install vim-plug
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"////////// Now on vim
+" PlugInstall
+" Afte this all the plugins will be installer
+
+
 "////////// NOTES ///////////
 "PYTHON
 "Some of the plugins relay on python install python3 for vim apt install vim-nox
