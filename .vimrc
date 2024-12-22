@@ -1,17 +1,3 @@
-"////////// Before plugins installations ////////
-" first install vim > sudo pacman -S vim
-"////////// Some plugins need nodejs
-" sudo pacman -S nodejs npm 
-"////////// if we use vim-pretier we need yarn
-" sudo pacman -S yarn
-"////////// Now install vim-plug
-" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-"https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"////////// Now on vim
-" PlugInstall
-" Afte this all the plugins will be installer
-
-
 "////////// NOTES ///////////
 "PYTHON
 "Some of the plugins relay on python install python3 for vim apt install vim-nox
@@ -89,6 +75,26 @@ let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-tailw
 " Automatically format code on save
 autocmd BufWritePre *.js,*.ts,*.jsx,*.tsx,*.html,*.css Prettier
 
+"////////////// COLORS ///////////////
+" Fix popup menu background and text colors
+highlight Pmenu guibg=#1e1e2e guifg=#cdd6f4
+highlight PmenuSel guibg=#81a1c1 guifg=#1e1e2e
+highlight PmenuSbar guibg=#2e3440
+highlight PmenuThumb guibg=#81a1c1
+
+" Fix Coc.nvim highlighting for suggestions
+highlight CocMenuSel guibg=#81a1c1 guifg=#1e1e2e
+highlight CocFloating guibg=#1e1e2e guifg=#cdd6f4
+highlight CocErrorSign guibg=#1e1e2e guifg=#bf616a
+highlight CocWarningSign guibg=#1e1e2e guifg=#ebcb8b
+highlight CocHintSign guibg=#1e1e2e guifg=#a3be8c
+highlight CocInfoSign guibg=#1e1e2e guifg=#88c0d0
+highlight CocHighlightText guibg=#3b4252 guifg=#cdd6f4
+
+" General UI tweaks for better readability
+highlight Normal guibg=#1e1e2e guifg=#cdd6f4
+highlight LineNr guifg=#4c566a
+highlight CursorLineNr guifg=#81a1c1
 
 "/////////////// CTAGS (TO JUMP TO DEFINITIONS)//////////////
 "set the ctag file relative to the project open
