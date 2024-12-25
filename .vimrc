@@ -19,6 +19,11 @@ nnoremap <C-Up>    :resize +1<CR>              " Increase height
 nnoremap <C-Down>  :resize -1<CR>              " Decrease height
 nnoremap <C-Right> :vertical resize +1<CR>     " Increase width
 nnoremap <C-Left>  :vertical resize -1<CR>     " Decrease width
+
+"change window
+nnoremap <C-w>w <C-w>w
+nnoremap <C-w>W <C-w>W
+
 "Tab to autocomplete
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
@@ -45,11 +50,11 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' } " Prettier for code forma
 Plug 'neoclide/coc.nvim', {'branch':'release'}
 Plug 'TaDaa/vimade'
 Plug 'airblade/vim-tailwind'
+Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 
 "//////////// FUNCTIONS ////////////
-
 "************* for tailwind html jsz tsx and js *****************
 "Adding function to autocomplete of tailwind
 " Function to detect if Tailwind config file exists
