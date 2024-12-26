@@ -28,6 +28,11 @@ nnoremap <C-w>W <C-w>W
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
+"This move the cursor on insert mode
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
 
 "///////// PLUGIN VARS /////////
 " Example: Adjusting vimade fade level
@@ -93,7 +98,7 @@ highlight CocFloating guibg=#1e1e2e guifg=#cdd6f4
 highlight CocErrorSign guibg=#1e1e2e guifg=#bf616a
 highlight CocWarningSign guibg=#1e1e2e guifg=#ebcb8b
 highlight CocHintSign guibg=#1e1e2e guifg=#a3be8c
-highlight CocInfoSign guibg=#1e1e2e guifg=#88c0d0
+highlight CocInfoSign guibg=#1e1e2e guifg=#88c0ff
 highlight CocHighlightText guibg=#3b4252 guifg=#cdd6f4
 
 " General UI tweaks for better readability
