@@ -40,7 +40,7 @@ inoremap <C-s> <Esc>:w<CR>a
 
 "///////// PLUGIN VARS /////////
 " Example: Adjusting vimade fade level
-let g:vimade = { 'fadelevel': 0.9 }
+let g:vimade = { 'fadelevel': 0.1 }
 
 
 "///////// PLUGINS /////////
