@@ -34,9 +34,13 @@ inoremap <C-l> <Right>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 
+"These combination is for saving the files in insert and normal mode
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <Esc>:w<CR>a
+
 "///////// PLUGIN VARS /////////
 " Example: Adjusting vimade fade level
-let g:vimade = { 'fadelevel': 0.7 }
+let g:vimade = { 'fadelevel': 0.9 }
 
 
 "///////// PLUGINS /////////
