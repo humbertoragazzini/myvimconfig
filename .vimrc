@@ -38,6 +38,10 @@ inoremap <C-k> <Up>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>a
 
+"These commands are to exit the file
+nnoremap <C-q> :q<CR>
+inoremap <C-q> <Esc>:q<CR>a
+
 "///////// PLUGIN VARS /////////
 " Example: Adjusting vimade fade level
 let g:vimade = { 'fadelevel': 0.1 }
@@ -109,6 +113,7 @@ highlight CocHighlightText guibg=#3b4252 guifg=#cdd6f4
 highlight Normal guibg=#1e1e2e guifg=#cdd6f4
 highlight LineNr guifg=#4c566a
 highlight CursorLineNr guifg=#81a1c1
+
 
 "/////////////// CTAGS (TO JUMP TO DEFINITIONS)//////////////
 "set the ctag file relative to the project open
