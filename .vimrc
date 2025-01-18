@@ -64,7 +64,41 @@ Plug 'neoclide/coc.nvim', {'branch':'release'}
 Plug 'TaDaa/vimade'
 Plug 'airblade/vim-tailwind'
 Plug 'terryma/vim-multiple-cursors'
+" How to use the mutiple cursors on vim
+" **Basic Usage**
+" **2. Start Selecting Multiple Cursors**
+" Ctrl + N`** → Select the word under the cursor and add another occurrence.
+" Ctrl + X`** → Skip the current occurrence and go to the next one.
+" Ctrl + P`** → Go back to the previous occurrence.
+" Esc`** → Exit multiple cursors mode.
+"
+" **2. Manual Selection**
+" **Visual Mode (`v`)** → Select text.
+" Press **`Ctrl + N`** to create multiple cursors for the selected text.
+"
+" **3. Select All Occurrences**
+" Move the cursor to a word and press **`Ctrl + N`** repeatedly.
+" Or use **`Ctrl + A`** to select all occurrences in the file.
+"
+" **4. Editing with Multiple Cursors**
+" Once multiple cursors are active, just **type as usual**.
+" Every cursor will type the same text.
+" You can use **normal mode commands**, such as `x` to delete, `ciw` to change words, or `A` to append.
+"
+" **Example Workflows**
+" **Change all instances of a word**
+" 1. Place the cursor on a word.
+" 2. Press **`Ctrl + N`** repeatedly to select occurrences.
+" 3. Press **`c`** to change the word.
+" 4. Type the new word and press **`Esc`**.
+"
+" **Insert text at multiple locations**
+" 1. Select multiple lines by going to a word and pressing `Ctrl + N` multiple times.
+" 2. Press **`I`** (capital i) to insert at the beginning.
+" 3. Type the new text and press **`Esc`**.
+
 call plug#end()
+
 
 
 "//////////// FUNCTIONS ////////////
