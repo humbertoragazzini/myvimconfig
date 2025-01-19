@@ -63,6 +63,12 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' } " Prettier for code forma
 Plug 'neoclide/coc.nvim', {'branch':'release'}
 Plug 'TaDaa/vimade'
 Plug 'airblade/vim-tailwind'
+" Install vim-polyglot for better syntax folding
+Plug 'sheerun/vim-polyglot'
+
+" Install vim-anyfold for intelligent folding
+Plug 'pseewald/vim-anyfold'
+
 Plug 'terryma/vim-multiple-cursors'
 " How to use the mutiple cursors on vim
 " **Basic Usage**
