@@ -7,6 +7,8 @@
 set number
 set relativenumber
 
+"////// Vars /////////
+autocmd FileType * AnyFoldActivate
 
 "////////// STARTUP COMMANDS /////////////
 " Start NERDTree automatically when Vim starts, but only if no files are specified in addition we open a terminal and resize it
@@ -44,7 +46,7 @@ inoremap <C-q> <Esc>:q<CR>a
 
 "///////// PLUGIN VARS /////////
 " Example: Adjusting vimade fade level
-let g:vimade = { 'fadelevel': 0.1 }
+let g:vimade = { 'fadelevel': 0.9 }
 
 
 "///////// PLUGINS /////////
@@ -62,7 +64,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletion and linting
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' } " Prettier for code formatting
 Plug 'neoclide/coc.nvim', {'branch':'release'}
 Plug 'TaDaa/vimade'
+
+" for tailwind 
 Plug 'airblade/vim-tailwind'
+
 " Install vim-polyglot for better syntax folding
 Plug 'sheerun/vim-polyglot'
 
@@ -133,6 +138,10 @@ let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-tailw
 " Automatically format code on save
 autocmd BufWritePre *.js,*.ts,*.jsx,*.tsx,*.html,*.css Prettier
 
+
+"////////////// theme //////////////
+colorscheme industry 
+
 "////////////// COLORS ///////////////
 " Fix popup menu background and text colors
 highlight Pmenu guibg=#1e1e2e guifg=#cdd6f4
@@ -144,7 +153,7 @@ highlight PmenuThumb guibg=#81a1c1
 highlight CocMenuSel guibg=#81a1c1 guifg=#1e1e2e
 highlight CocFloating guibg=#1e1e2e guifg=#cdd6f4
 highlight CocErrorSign guibg=#1e1e2e guifg=#bf616a
-highlight CocWarningSign guibg=#1e1e2e guifg=#ebcb8b
+highlight CocWarningSign guibg=#1e002e guifg=#ebcb8b
 highlight CocHintSign guibg=#1e1e2e guifg=#a3be8c
 highlight CocInfoSign guibg=#1e1e2e guifg=#88c0ff
 highlight CocHighlightText guibg=#3b4252 guifg=#cdd6f4
