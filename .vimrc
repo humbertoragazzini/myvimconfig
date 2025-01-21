@@ -1,7 +1,6 @@
 "////////// NOTES ///////////
 "PYTHON
-"Some of the plugins relay on python install python3 for vim apt install vim-nox
-
+"Some of the plugins relay on python install python3 for vim apt install vim-nox / on arch remember to use pacman
 
 "/////// GRAL SETTINGS //////
 set number
@@ -43,6 +42,10 @@ inoremap <C-s> <Esc>:w<CR>a
 "These commands are to exit the file
 nnoremap <C-q> :q<CR>
 inoremap <C-q> <Esc>:q<CR>a
+
+"This is for NERDTree toggle show and hide
+nnoremap <C-A-n> :NERDTreeToggle<CR>
+nnoremap <S-F2> :NERDTreeToggle<CR>
 
 "///////// PLUGIN VARS /////////
 " Example: Adjusting vimade fade level
