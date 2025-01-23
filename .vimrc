@@ -47,6 +47,9 @@ inoremap <C-q> <Esc>:q<CR>a
 nnoremap <C-A-n> :NERDTreeToggle<CR>
 nnoremap <S-F2> :NERDTreeToggle<CR>
 
+"This enable the popup for coc.nvim definitions
+nnoremap K :call CocActionAsync('doHover')<CR>
+
 "///////// PLUGIN VARS /////////
 " Example: Adjusting vimade fade level
 let g:vimade = { 'fadelevel': 0.9 }
@@ -64,6 +67,12 @@ Plug 'sheerun/vim-polyglot'                     " Language syntax highlighting
 Plug 'leafgarland/typescript-vim'               " TypeScript support
 Plug 'maxmellon/vim-jsx-pretty'                 " JSX/TSX syntax highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletion and linting
+"Before using popups function you need to install the servers for the used
+"languages coc-<name of language server>, in my case:
+":CocInstall coc-tsserver
+":CocInstall coc-html coc-css coc-tailwindcss
+":CocInstall coc-pyright
+
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' } " Prettier for code formatting
 Plug 'neoclide/coc.nvim', {'branch':'release'}
 Plug 'TaDaa/vimade'
