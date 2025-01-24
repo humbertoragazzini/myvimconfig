@@ -3,11 +3,19 @@
 "Some of the plugins relay on python install python3 for vim apt install vim-nox / on arch remember to use pacman
 
 "/////// GRAL SETTINGS //////
+"Line numbers
 set number
 set relativenumber
 
-"////// Vars /////////
+"////// 
+"Auto start command for anyfold function (fold the functions and blocks
+"of code
+"/////////
 autocmd FileType * AnyFoldActivate
+"anyfold settings
+set foldmethod=syntax  " or 'manual' if you want to control folding yourself
+set foldlevelstart=7  " Open folds when opening a file
+set foldlevel=7       " Ensure folds remain open
 
 "////////// STARTUP COMMANDS /////////////
 " Start NERDTree automatically when Vim starts, but only if no files are specified in addition we open a terminal and resize it
@@ -53,7 +61,6 @@ nnoremap K :call CocActionAsync('doHover')<CR>
 "///////// PLUGIN VARS /////////
 " Example: Adjusting vimade fade level
 let g:vimade = { 'fadelevel': 0.9 }
-
 
 "///////// PLUGINS /////////
 call plug#begin('~/.vim/plugged')
