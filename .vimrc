@@ -181,6 +181,12 @@ highlight CocHighlightText guibg=#3b4252 guifg=#cdd6f4
 highlight Normal guibg=#1e1e2e guifg=#cdd6f4
 highlight LineNr guifg=#4c566a
 highlight CursorLineNr guifg=#81a1c1
+" Testing some color for nerdtree
+highlight NERDTreeFile ctermfg=White guifg=#ebdbb2
+highlight NERDTreeDir ctermfg=Blue guifg=#83a598
+highlight NERDTreeDirSlash ctermfg=Blue guifg=#83a598
+highlight NERDTreeOpenable ctermfg=Yellow guifg=#fabd2f
+highlight NERDTreeClosable ctermfg=Red guifg=#fb4934
 
 
 "/////////////// CTAGS (TO JUMP TO DEFINITIONS)//////////////
