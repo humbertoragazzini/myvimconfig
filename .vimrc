@@ -14,8 +14,8 @@ set relativenumber
 autocmd FileType * AnyFoldActivate
 " AnyFold settings
 set foldmethod=syntax  " Use syntax-based folding
-set foldlevelstart=7   " Open folds when opening a file
-set foldlevel=7        " Ensure folds remain open
+set foldlevelstart=99   " Open folds when opening a file
+set foldlevel=99        " Ensure folds remain open
 
 "////////// STARTUP COMMANDS ///////////
 " Start NERDTree automatically when Vim starts, but only if no files are specified
@@ -79,6 +79,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletion and linting
 " :CocInstall coc-tsserver
 " :CocInstall coc-html coc-css coc-tailwindcss
 " :CocInstall coc-pyrighl
+" In the project before start working remember to install with npm the server
+" npm install --save-dev @tailwindcss/language-server
 " You will need to install the tailwindcss server and configure the CocConfig
 " file on vim running :CocConfig and pasting the next json obj that is in the
 " repository
