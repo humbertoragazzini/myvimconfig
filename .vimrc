@@ -28,14 +28,13 @@ autocmd VimEnter * if argc() == 0 | execute 'terminal' | resize 10 | startinsert
 
 "////////// KEY MAPPINGS ///////////
 " Resize keybindings
-nnoremap <C-Up>    :resize +1<CR>              " Increase height
-nnoremap <C-Down>  :resize -1<CR>              " Decrease height
-nnoremap <C-Right> :vertical resize +1<CR>     " Increase width
-nnoremap <C-Left>  :vertical resize -1<CR>     " Decrease width
+nnoremap <C-A-k> :resize +1<CR>              " Increase height
+nnoremap <C-A-j> :resize -1<CR>              " Decrease height
+nnoremap <C-A-h> :vertical resize +1<CR>     " Increase width
+nnoremap <C-A-l> :vertical resize -1<CR>     " Decrease width
 
 " Change window
-nnoremap <C-w>w <C-w>w
-nnoremap <C-w>W <C-w>W
+nnoremap <C-w>w <C-w> 
 
 " Tab to autocomplete
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
