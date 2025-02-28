@@ -3,6 +3,10 @@
 " Some of the plugins rely on Python. Install python3 for Vim:
 " On Debian/Ubuntu: apt install vim-nox
 " On Arch: pacman -S python
+" for jumping to definitions we can use CTAGS
+" sudo pacman -S ctags
+" in the root of the directory
+" ctags -R --langmap=TypeScript:.ts.tsx --languages=TypeScript --exclude=node_modules .
 
 "////////// GENERAL SETTINGS ///////////
 " Line numbers
@@ -88,8 +92,8 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' } " Prettier for code forma
 Plug 'TaDaa/vimade'                              " Dim inactive windows
 Plug 'sheerun/vim-polyglot'                      " Better syntax folding
 Plug 'pseewald/vim-anyfold'                      " Intelligent folding
-Plug 'terryma/vim-multiple-cursors'              " Multiple cursors
-
+"Plug 'terryma/vim-multiple-cursors'              " Multiple cursors
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 call plug#end()
 
 "////////// FUNCTIONS ///////////
