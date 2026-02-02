@@ -7,7 +7,11 @@
 " sudo pacman -S ctags
 " in the root of the directory
 " ctags -R --langmap=TypeScript:.ts.tsx --languages=TypeScript --exclude=node_modules .
-
+" --- must-haves for syntax highlighting + filetype detection ---
+syntax on
+filetype on
+filetype plugin on
+filetype indent on
 "////////// GENERAL SETTINGS ///////////
 " Line numbers
 set number
@@ -66,6 +70,10 @@ nnoremap K :call CocActionAsync('doHover')<CR>
 let g:vimade = { 'fadelevel': 0.9 }
 
 "////////// PLUGINS ///////////
+" Before installing plugins we need PlugInstall 
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 call plug#begin('~/.vim/plugged')
 
 " NERDTree
